@@ -315,7 +315,7 @@ def selectnode(mode="sms"):
         if mode in ["sms", "call"]:
             cc, target = get_phone_info()
             if cc != "91":
-                max_limit.update({"sms": 100})
+                max_limit.update({"sms": 5000})
         elif mode == "mail":
             target = get_mail_info()
         else:
